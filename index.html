@@ -1,249 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spotify clone</title>
-    <script src="https://kit.fontawesome.com/5f85cdecf3.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="assets/css/custom.css">
-    <link rel="stylesheet" href="assets/shared/css/main.css">
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spotify clone</title>
+<script src="https://kit.fontawesome.com/5f85cdecf3.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="assets/css/custom.css">
+<link rel="stylesheet" href="assets/shared/css/main.css">
 
 </head>
 <body>
 
-    <div id="app">
-        <!-- Main content -->
-        <main id="main-window">
-            <!-- Sidebar -->
-            <aside id="sidebar" class="font-size-14 secondary-color">
-                <div class="sidebar-top">
-                  <div class="logo-spotify">
-                    <img src="assets/img/logo.svg" alt="logo spotify" class="logo-big">
-                    <img src="assets/img/logo-small.svg" alt="logo spotify" class="logo-small">
-                  </div><!-- logo -->
+<div id="app">
+    <!-- Main content -->
+    <main id="main-window">
+        <!-- Sidebar -->
+        <aside id="sidebar" class="font-size-14 font-weight-400 secondary-color">
+            <div class="sidebar-top">
+              <div class="logo-spotify">
+                <img src="assets/img/logo.svg" alt="logo spotify" class="logo-big">
+                <img src="assets/img/logo-small.svg" alt="logo spotify" class="logo-small">
+              </div><!-- logo -->
 
-                  <nav class="main-menu">
-                    <ul class="vertical-list">
-                      <li class="active">
-                        <a href="#">
-                          <img src="assets/img/home.svg" alt="home icon">
-                        <span>Home</span>
-                        </a>
-                      </li>
+              <nav class="main-menu">
+                <ul class="vertical-list">
+                  <li class="active">
+                    <a href="#">
+                      <img src="assets/img/home.svg" alt="home icon">
+                    <span>Home</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                    <img src="assets/img/search.svg" alt="search icon">
+                    <span>Cerca</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                    <img src="assets/img/libreria.svg" alt="libreria">
+                    <span>La tua musica</span>
+                    </a>
+                  </li>
+                </ul><!-- list inline -->
+              </nav><!-- main-menu -->
+
+              <span class="margin-left-10 white-color font-weight-700 font-size-18 text-upp">Playlist</span>
+
+              <nav class="playlist-menu">
+
+                <ul class="vertical-list">
                       <li>
                         <a href="#">
-                        <img src="assets/img/search.svg" alt="search icon">
-                        <span>Cerca</span>
-                        </a>
+                        <i class="fas fa-plus secondary-bg-color"></i>
+                        Crea Playlist</a>
                       </li>
-                      <li>
-                        <a href="#">
-                        <img src="assets/img/libreria.svg" alt="libreria">
-                        <span>La tua musica</span>
-                        </a>
-                      </li>
-                    </ul><!-- list inline -->
-                  </nav><!-- main-menu -->
+                      <li><a href="#">Nome Playlist</a></li>
+                      <li><a href="#">Nome Playlist</a></li>
+                      <li><a href="#">Nome Playlist</a></li>
+                      <li><a href="#">Nome Playlist</a></li>
+                      <li><a href="#">Nome Playlist</a></li>
+                      <li><a href="#">Nome Playlist</a></li>
+                      <li><a href="#">Nome Playlist</a></li>
+                    </ul>
 
-                  <span class="title-playlist margin-left-10">Playlist</span>
+              </nav><!-- playlist-menu -->
 
-                  <nav class="playlist-menu">
+            </div><!-- logo e nav -->
 
-                    <ul class="vertical-list">
-                          <li>
-                            <a href="#">
-                            <i class="fas fa-plus secondary-bg-color"></i>
-                            Crea Playlist</a>
-                          </li>
-                          <li><a href="#">Nome Playlist</a></li>
-                          <li><a href="#">Nome Playlist</a></li>
-                          <li><a href="#">Nome Playlist</a></li>
-                          <li><a href="#">Nome Playlist</a></li>
-                          <li><a href="#">Nome Playlist</a></li>
-                          <li><a href="#">Nome Playlist</a></li>
-                          <li><a href="#">Nome Playlist</a></li>
-                        </ul>
+            <div class="sidebar-bottom margin-left-10">
+              <div class="app-install relative">
+                <i class="far fa-arrow-alt-circle-down"></i>
+                <span>Installa app</span>
 
-                  </nav><!-- playlist-menu -->
+              </div><!-- app-install -->
 
-                </div><!-- logo e nav -->
+              <div class="account">
+                <div class="image-account secondary-bg-color">
+                  <img src="assets/img/profile.svg" alt="profile">
+                </div><!-- image-account -->
+                <span class="font-weight-700 font-size-16 white-color">Francesco Scarniglia</span>
+              </div><!-- account -->
+            </div><!-- sidebar-bottom -->
 
-                <div class="sidebar-bottom margin-left-10">
-                  <div class="app-install relative">
-                    <i class="far fa-arrow-alt-circle-down"></i>
-                    <span>Installa app</span>
+        </aside><!-- aside -->
 
-                  </div><!-- app-install -->
-                  
-                  <div class="account">
-                    <div class="image-account secondary-bg-color">
-                      <img src="assets/img/profile.svg" alt="profile">
-                    </div><!-- image-account -->
-                    <span class="title-account">Francesco Scarniglia</span>
-                  </div><!-- account -->
-                </div><!-- sidebar-bottom -->
+        <!-- Content -->
+        <div id="content">
+            <div class="content-top-bar">
+              <a href="#" class="btn-big">effettua l'upgrade</a>
+            </div><!-- top-bar -->
+            <div class="scrollable">
+                <nav class="content-menu">
+                  <ul class="list-inline">
+                    <li class="active"><a href="#">In Evidenza</a></li>
+                    <li ><a href="#">Poadcast</a></li>
+                    <li><a href="#">Classifiche</a></li>
+                    <li><a href="#">Generi e Mood</a></li>
+                    <li><a href="#">Nuove Uscite</a></li>
+                    <li><a href="#">Scopri</a></li>
+                  </ul>
+                </nav>
 
-            </aside><!-- aside -->
+                <h2 class="padding-t-30 padding-bt-30 font-size-20">Ascoltati di recente</h2>
 
-            <!-- Content -->
-            <div id="content">
-                <div class="content-top-bar">
-                  <a href="#" class="btn-big">effettua l'upgrade</a>
-                </div><!-- top-bar -->
-                <div class="scrollable">
-                    <nav class="content-menu">
-                      <ul class="list-inline">
-                        <li class="active"><a href="#">In Evidenza</a></li>
-                        <li ><a href="#">Poadcast</a></li>
-                        <li><a href="#">Classifiche</a></li>
-                        <li><a href="#">Generi e Mood</a></li>
-                        <li><a href="#">Nuove Uscite</a></li>
-                        <li><a href="#">Scopri</a></li>
-                      </ul>
-                    </nav>
+                <section class="content-category text-center">
+                    <div class="track">
+                      <div class="relative">
+                        <img src="assets/img/worakls-bleu.jpg" alt="bonobo">
+                        <div class="middle">
+                              <i class="far fa-play-circle fa-4x position-center white-color"></i>
+                        </div><!-- middle -->
+                    </div> <!-- relative -->
+                      <h4 class="title-m"> Worakls</h4>
+                      <p class="subtitle-m">Bleu</p>
+                    </div>
 
-                    <h2 class="padding-t-30 padding-bt-30 font-size-20">Ascoltati di recente</h2>
-
-                    <section class="content-category text-center">
-                        <div class="track">
-                          <div class="relative">
-                            <img src="assets/img/worakls-bleu.jpg" alt="bonobo">
-                            <div class="middle">
-                                  <i class="far fa-play-circle fa-4x position-center white-color"></i>
-                            </div><!-- middle -->
-                        </div> <!-- relative -->
-                          <h4 class="title-m"> Worakls</h4>
-                          <p class="subtitle-m">Bleu</p>
-                        </div>
-
-                        <div class="track">
-                          <div class="relative">
-                            <img src="assets/img/gorillaz-demon-days.jpg" alt="gorillaz">
-                            <div class="middle">
-                                  <i class="far fa-play-circle fa-4x position-center white-color"></i>
-                            </div><!-- middle -->
-                          </div><!-- relative -->
-                        <h4 class="title-m"> Gorillaz</h4>
-                        <p class="subtitle-m">Dare</p>
-                        </div>
-
-                        <div class="track">
-                          <div class="relative">
-                          <img src="assets/img/queen-killer-queen.jpg" alt="queen killer Queen">
-                          <div class="middle">
-                                <i class="far fa-play-circle fa-4x position-center white-color"></i>
-                          </div><!-- middle -->
-                        </div><!-- relative -->
-                          <h4 class="title-m"> Queen</h4>
-                          <p class="subtitle-m">Killer queen</p>
-                        </div>
-
-                        <div class="track">
-                          <div class="relative">
-                          <img src="assets/img/stereophonics-have-a-nice-day.jpg" alt="stereophonics">
-                          <div class="middle">
-                                <i class="far fa-play-circle fa-4x position-center white-color"></i>
-                          </div><!-- middle -->
-                        </div><!-- relative -->
-                          <h4 class="title-m"> Stereophonics</h4>
-                          <p class="subtitle-m">Have a nice day</p>
-                        </div>
-
-                        <div class="track">
-                          <div class="relative">
-                          <img src="assets/img/queen-the-works.jpg" alt="queen the works">
-                          <div class="middle">
-                                <i class="far fa-play-circle fa-4x position-center white-color"></i>
-                          </div><!-- middle -->
-                        </div><!-- relative -->
-                          <h4 class="title-m"> Queen</h4>
-                          <p class="subtitle-m">Radio gaga</p>
-                        </div>
-
-                        <div class="track">
-                          <div class="relative">
-                          <img src="assets/img/bonobo-migration.jpg" alt="bonobo">
-                          <div class="middle">
-                                <i class="far fa-play-circle fa-4x position-center white-color"></i>
-                          </div><!-- middle -->
-                        </div><!-- relative -->
-                          <h4 class="title-m"> Bonobo</h4>
-                          <p class="subtitle-m">Migration</p>
-                        </div>
-
-                        <div class="track">
-                          <div class="relative">
-                          <img src="assets/img/bonobo-migration.jpg" alt="bonobo">
-                          <div class="middle">
-                                <i class="far fa-play-circle fa-4x position-center white-color"></i>
-                          </div><!-- middle -->
-                        </div><!-- relative -->
-                          <h4 class="title-m"> Bonobo</h4>
-                          <p class="subtitle-m">Migration</p>
-                        </div>
-
-                    </section>
-
-                    <h2 class="padding-t-30 padding-bt-10 font-size-20">Creato per Francesco Scarniglia</h2>
-                    <p class="padding-bt-30 secondary-color font-size-12">Pi&ugrave; ascolti, pi&ugrave; accurati saranno i suggerimenti.</p>
-
-                    <section class="content-category text-center">
-                      <div class="track">
-                        <div class="relative">
-                        <img src="assets/img/radar.jpeg" alt="radar">
+                    <div class="track">
+                      <div class="relative">
+                        <img src="assets/img/gorillaz-demon-days.jpg" alt="gorillaz">
                         <div class="middle">
                               <i class="far fa-play-circle fa-4x position-center white-color"></i>
                         </div><!-- middle -->
                       </div><!-- relative -->
-                        <h4 class="title-m"> Release Radar</h4>
-                      </div>
+                    <h4 class="title-m"> Gorillaz</h4>
+                    <p class="subtitle-m">Dare</p>
+                    </div>
 
-                      <div class="track">
-                        <div class="relative">
-                        <img src="assets/img/mixdaily.jpeg" alt="mix daily">
-                        <div class="middle">
-                              <i class="far fa-play-circle fa-4x position-center white-color"></i>
-                        </div><!-- middle -->
-                      </div><!-- relative -->
-                        <h4 class="title-m">Daily Mix 1</h4>
-                      </div>
-                    </section>
+                    <div class="track">
+                      <div class="relative">
+                      <img src="assets/img/queen-killer-queen.jpg" alt="queen killer Queen">
+                      <div class="middle">
+                            <i class="far fa-play-circle fa-4x position-center white-color"></i>
+                      </div><!-- middle -->
+                    </div><!-- relative -->
+                      <h4 class="title-m"> Queen</h4>
+                      <p class="subtitle-m">Killer queen</p>
+                    </div>
 
-                    <h2 class="padding-t-30 padding-bt-10 font-size-20">Artisti pi&ugrave; popolari</h2>
-                    <p class="padding-bt-30 secondary-color font-size-12">Pi&ugrave; ascolti, pi&ugrave; accurati saranno i suggerimenti.</p>
+                    <div class="track">
+                      <div class="relative">
+                      <img src="assets/img/stereophonics-have-a-nice-day.jpg" alt="stereophonics">
+                      <div class="middle">
+                            <i class="far fa-play-circle fa-4x position-center white-color"></i>
+                      </div><!-- middle -->
+                    </div><!-- relative -->
+                      <h4 class="title-m"> Stereophonics</h4>
+                      <p class="subtitle-m">Have a nice day</p>
+                    </div>
 
-                    <section class="content-category text-center">
-                      <div class="artist">
-                        <div class="relative">
-                        <img src="assets/img/worakls-bleu.jpg" alt="worakls">
-                        <div class="middle middle-radius">
-                              <i class="far fa-play-circle fa-4x position-center white-color"></i>
-                        </div><!-- middle -->
-                        </div><!-- relative -->
-                        <h4 class="title-m"> Worakls</h4>
-                      </div>
-                      <div class="artist">
-                        <div class="relative">
-                        <img src="assets/img/queen-the-works.jpg" alt="queen">
-                        <div class="middle middle-radius">
-                              <i class="far fa-play-circle fa-4x position-center white-color"></i>
-                        </div><!-- middle -->
-                      </div><!-- relative -->
-                        <h4 class="title-m"> Queen</h4>
-                      </div>
+                    <div class="track">
+                      <div class="relative">
+                      <img src="assets/img/queen-the-works.jpg" alt="queen the works">
+                      <div class="middle">
+                            <i class="far fa-play-circle fa-4x position-center white-color"></i>
+                      </div><!-- middle -->
+                    </div><!-- relative -->
+                      <h4 class="title-m"> Queen</h4>
+                      <p class="subtitle-m">Radio gaga</p>
+                    </div>
 
-                    </section>
+                    <div class="track">
+                      <div class="relative">
+                      <img src="assets/img/bonobo-migration.jpg" alt="bonobo">
+                      <div class="middle">
+                            <i class="far fa-play-circle fa-4x position-center white-color"></i>
+                      </div><!-- middle -->
+                    </div><!-- relative -->
+                      <h4 class="title-m"> Bonobo</h4>
+                      <p class="subtitle-m">Migration</p>
+                    </div>
 
-                </div><!-- scrollable -->
+                    <div class="track">
+                      <div class="relative">
+                      <img src="assets/img/bonobo-migration.jpg" alt="bonobo">
+                      <div class="middle">
+                            <i class="far fa-play-circle fa-4x position-center white-color"></i>
+                      </div><!-- middle -->
+                    </div><!-- relative -->
+                      <h4 class="title-m"> Bonobo</h4>
+                      <p class="subtitle-m">Migration</p>
+                    </div>
 
-            </div><!-- content -->
-        </main><!-- main-window -->
+                </section>
 
-        <!-- Bottom Player -->
-        <footer id="player">Player</footer>
+                <h2 class="padding-t-30 padding-bt-10 font-size-20">Creato per Francesco Scarniglia</h2>
+                <p class="padding-bt-30 secondary-color font-size-12">Pi&ugrave; ascolti, pi&ugrave; accurati saranno i suggerimenti.</p>
 
-    </div><!-- app -->
+                <section class="content-category text-center">
+                  <div class="track">
+                    <div class="relative">
+                    <img src="assets/img/radar.jpeg" alt="radar">
+                    <div class="middle">
+                          <i class="far fa-play-circle fa-4x position-center white-color"></i>
+                    </div><!-- middle -->
+                  </div><!-- relative -->
+                    <h4 class="title-m"> Release Radar</h4>
+                  </div>
+
+                  <div class="track">
+                    <div class="relative">
+                    <img src="assets/img/mixdaily.jpeg" alt="mix daily">
+                    <div class="middle">
+                          <i class="far fa-play-circle fa-4x position-center white-color"></i>
+                    </div><!-- middle -->
+                  </div><!-- relative -->
+                    <h4 class="title-m">Daily Mix 1</h4>
+                  </div>
+                </section>
+
+                <h2 class="padding-t-30 padding-bt-10 font-size-20">Artisti pi&ugrave; popolari</h2>
+                <p class="padding-bt-30 secondary-color font-size-12">Pi&ugrave; ascolti, pi&ugrave; accurati saranno i suggerimenti.</p>
+
+                <section class="content-category text-center">
+                  <div class="artist">
+                    <div class="relative">
+                    <img src="assets/img/worakls-bleu.jpg" alt="worakls">
+                    <div class="middle middle-radius">
+                          <i class="far fa-play-circle fa-4x position-center white-color"></i>
+                    </div><!-- middle -->
+                    </div><!-- relative -->
+                    <h4 class="title-m"> Worakls</h4>
+                  </div>
+                  <div class="artist">
+                    <div class="relative">
+                    <img src="assets/img/queen-the-works.jpg" alt="queen">
+                    <div class="middle middle-radius">
+                          <i class="far fa-play-circle fa-4x position-center white-color"></i>
+                    </div><!-- middle -->
+                  </div><!-- relative -->
+                    <h4 class="title-m"> Queen</h4>
+                  </div>
+
+                </section>
+
+            </div><!-- scrollable -->
+
+        </div><!-- content -->
+    </main><!-- main-window -->
+
+    <!-- Bottom Player -->
+    <footer id="player">Player</footer>
+
+</div><!-- app -->
 
 </body>
 </html>
