@@ -56,9 +56,17 @@
     padding: 10px 0px;
 }
 .app-install {
-    margin-bottom: 10px;
-    border-bottom: 1px solid white;
+    margin-bottom: 20px;
+
 }
+.app-install::before {
+        content: '';
+        position: absolute;
+        width: 90%;
+        left: 10;
+        bottom: 0px;
+        border-bottom: 1px solid rgb(127,127,127);
+    }
 
 .image-account {
     display: inline-block;
