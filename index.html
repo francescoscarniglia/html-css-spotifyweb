@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify clone</title>
+    <script src="https://kit.fontawesome.com/5f85cdecf3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/custom.css">
+
 </head>
 <body>
 
@@ -13,14 +15,77 @@
         <main id="main-window">
             <!-- Sidebar -->
             <aside id="sidebar">
-                <div class="sidebar-top">Logo e Nav</div>
+                <div class="sidebar-top">
+                  <div class="logo-spotify">
+                    <img src="assets/img/logo.svg" alt="logo spotify">
+                  </div><!-- logo -->
 
-                <div class="sidebar-bottom">Account</div>
-            </aside>
+                  <nav class="main-menu">
+                    <ul class="vertical-list">
+                      <li class="active">
+                        <a href="#"><i class="fas fa-home"></i>
+                        <span>Home</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                        <i class="fas fa-search"></i>
+                        <span>Cerca</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                        <i class="fas fa-bars"></i>
+                        <span>La tua musica</span>
+                        </a>
+                      </li>
+                    </ul><!-- list inline -->
+                  </nav><!-- main-menu -->
+
+                  <span class="title-playlist margin-left-10">Playlist</span>
+
+                  <nav class="playlist-menu">
+
+                    <ul class="vertical-list">
+                          <li>
+                            <a href="#">
+                            <i class="fas fa-plus"></i>
+                            Crea Playlist</a>
+                          </li>
+                          <li><a href="#">Nome Playlist</a></li>
+                          <li><a href="#">Nome Playlist</a></li>
+                          <li><a href="#">Nome Playlist</a></li>
+                          <li><a href="#">Nome Playlist</a></li>
+                          <li><a href="#">Nome Playlist</a></li>
+                          <li><a href="#">Nome Playlist</a></li>
+                          <li><a href="#">Nome Playlist</a></li>
+                        </ul>
+
+                  </nav><!-- playlist-menu -->
+
+                </div><!-- logo e nav -->
+
+                <div class="sidebar-bottom margin-left-10">
+                  <div class="app-install">
+                    <i class="far fa-arrow-alt-circle-down"></i>
+                    <span>Installa app</span>
+
+                  </div><!-- app-install -->
+                  <div class="account">
+                    <div class="image-account">
+                      <img src="assets/img/profile.svg" alt="profile">
+                    </div><!-- image-account -->
+                    <span class="title-account">Francesco Scarniglia</span>
+                  </div><!-- account -->
+                </div><!-- sidebar-bottom -->
+
+            </aside><!-- aside -->
 
             <!-- Content -->
             <div id="content">
-                <div class="content-top-bar">Top bare here</div>
+                <div class="content-top-bar">
+                  Top bare here
+                </div><!-- top-bar -->
                 <div class="scrollable">
                     <nav class="content-menu">Menu</nav>
 
@@ -45,13 +110,15 @@
                     <section class="content-category">
                         <h2>Category title</h2>
                     </section>
-                </div>
-            </div>
-        </main>
+                </div><!-- scrollable -->
+
+            </div><!-- content -->
+        </main><!-- main-window -->
 
         <!-- Bottom Player -->
         <footer id="player">Player</footer>
-    </div>
+
+    </div><!-- app -->
 
 </body>
 </html>
