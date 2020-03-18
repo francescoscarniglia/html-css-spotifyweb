@@ -1,22 +1,3 @@
-/* FONT MONTSERRAT BY GOOGLE FONTS */
-@import url('https://fonts.googleapis.com/css?family=Montserrat:100,400,500,700,900&display=swap');
-/* GENERAL */
-* {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-}
-
-body {
-      color: #fff;
-      font-family: 'Montserrat', sans-serif;
-}
-
-/* UTILITIES */
-.margin-left-10 {
-      margin-left: 10px;
-}
-
 /* LAYOUT */
 #app {
       display: flex;
@@ -32,13 +13,11 @@ body {
 
 /* SIDEBAR */
 #sidebar {
-      flex-basis: 230px; /* larghezza sidebar */
+      flex-basis: 5%; /* larghezza sidebar */
       display: flex;
       flex-direction: column;
-      color: rgb(127,127,127);
       background: #000;
       font-weight: 400;
-      font-size: 12px;
 }
 
 #sidebar a,
@@ -58,13 +37,18 @@ body {
 
 .sidebar-top {
       flex-grow: 1;
+      text-align: center;
       padding: 10px 10px 10px 0;
-      /*border: 1px solid yellow; debug */
       background: #000;
 }
 
 .sidebar-bottom {
     margin: 10px 0;
+}
+
+#sidebar span,
+.playlist-menu {
+  display: none;
 }
 
 .app-install,
@@ -82,7 +66,6 @@ body {
     height: 40px;
     border-radius: 100%;
     padding: 10px;
-    background: rgb(127,127,127);
     vertical-align: middle;
     position: relative;
     overflow: hidden;
@@ -111,19 +94,14 @@ body {
 }
 
 .logo-big {
-  display:block;
-}
-
-.logo-small {
   display:none;
 }
 
-/* MENU  */
-.main-menu,
-.playmenu {
-    font-size: 16px;
-    font-weight: 100;
+.logo-small {
+  display:block;
 }
+
+/* MENU  */
 
 /* vertical list */
 .vertical-list {
@@ -134,20 +112,24 @@ body {
 .vertical-list li {
     padding: 5px 10px;
 }
-
-.fas.fa-home,
-.fas.fa-search,
-.fas.fa-bars {
-    width: 20px;
-    margin-right: 2px;
+.vertical-list li img {
+  width: 25px;
+  vertical-align: middle;
+  margin-right: 5px;
 }
 
-.fas.fa-bars {
-    transform: rotate(90deg);
+.fa-arrow-alt-circle-down {
+  font-size: 30px;
+  margin-right: 3px;
 }
 
 .vertical-list li.active {
     border-left: 3px solid lightgreen;
+
+}
+
+.vertical-list li.active span {
+  color: #fff;
 }
 
 .title-playlist {
@@ -158,7 +140,6 @@ body {
 }
 
 .fa-plus {
-    background: rgba(127,127,127,1);
     color: #000;
     padding: 10px;
     vertical-align: middle;
@@ -172,7 +153,7 @@ body {
 #content {
     position: relative;
     flex-grow: 1;
-    background: #000;
+    background: #141921;
 }
 
 .content-top-bar {
@@ -226,17 +207,24 @@ body {
 
 }
 
-
-
 .btn-big {
     color: #fff;
     text-transform: uppercase;
     text-decoration: none;
     font-weight: 100;
     border: 1px solid #fff;
+    transition: 1s ease;
     font-size: 12px;
     padding: 12px 16px;
     border-radius: 30px;
+}
+
+.btn-big:hover,
+.btn-big:active,
+.btn-big:focus {
+    color: rgba(8, 11,17,1);
+    background: #fff;
+    border: 1px solid #fff;
 }
 
 #content .scrollable {
@@ -253,13 +241,59 @@ body {
 .content-menu {
       height: 80px; /*debug*/
       background: #222;
+      display: none;
 }
 
 .content-category {
-      height: 200px; /* Debug */
+      width: 1600px;
+      max-width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+
 }
 
+.track,
+.artist {
+  flex-basis: 50%;
+  position: relative;
+  flex-shrink: 0;
+  padding:10px 0px;
+}
 
+.artist img{
+  border-radius: 100%;
+}
+
+.middle {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background: rgba(0,0,0,.7);
+  transition: 1s ease;
+  opacity: 0;
+  text-align: center;
+  display: block;
+}
+.middle-radius {
+  border-radius: 100%;
+}
+
+.position-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.track:hover .middle {
+  opacity: 1;
+  cursor: pointer;
+}
 
 
 /* BOTTOM PLAYER */
@@ -270,26 +304,90 @@ body {
 
 /* media queries */
 @media all and (max-width:768px) {
-  #sidebar {
-    flex-basis: 5%;
-    display: flex;
-    flex-direction: column;
-    color: rgb(127,127,127);
-    background: #000;
-    font-weight: 400;
-    font-size: 12px;
-    text-align: center;
+
+
 }
-  #sidebar span,
-  .playlist-menu {
-    display: none;
+
+@media only screen and (min-width: 600px) {
+
+}
+
+@media only screen and (min-width: 768px) {
+
+
+}
+
+@media only screen and (min-width: 992px) {
+  .content-category {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-shrink: 0;
+        overflow: hidden;
+  }
+
+  .track,
+  .artist {
+    flex-basis: calc(100% / 6);
+    padding: 10px;
+  }
+
+  .artist:hover .middle  {
+    opacity: 1;
+  }
+
+  .content-menu {
+    display: flex;
+  }
+
+  .track img,
+  .artist img {
+    width: 100%;
   }
 
   .logo-big {
+    display:block;
+  }
+  .logo-small {
     display:none;
   }
 
-  .logo-small {
-    display:block;
+  #sidebar {
+    flex-basis: 230px; /* larghezza sidebar */
+    display: flex;
+    flex-direction: column;
+    background: #000;
+    font-weight: 400;
+  }
+
+  #sidebar span,
+  .playlist-menu {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+
+  .fas.fa-home,
+  .fas.fa-search,
+  .fas.fa-bars {
+    width: 20px;
+    margin-right: 2px;
+    font-size: 20px;
+    text-align: left;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .fa-arrow-alt-circle-down {
+    font-size: 22px;
+    vertical-align: middle;
+  }
+  .sidebar-top {
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .track,
+  .artist {
+    padding: 10px 10px;
   }
 }
