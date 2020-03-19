@@ -22,7 +22,7 @@
                 <img src="assets/img/logo-small.svg" alt="logo spotify" class="logo-small">
               </div><!-- logo -->
 
-              <nav class="main-menu">
+              <nav class="main-menu padding-t-30">
                 <ul class="vertical-list">
                   <li class="active">
                     <a href="#">
@@ -45,7 +45,7 @@
                 </ul><!-- list inline -->
               </nav><!-- main-menu -->
 
-              <span class="margin-left-10 white-color font-weight-700 font-size-18 text-upp">Playlist</span>
+              <span class="padding-Y-10 margin-left-10 white-color font-weight-700 font-size-18 text-upp">Playlist</span>
 
               <nav class="playlist-menu">
 
@@ -240,7 +240,58 @@
     </main><!-- main-window -->
 
     <!-- Bottom Player -->
-    <footer id="player">Player</footer>
+    <footer id="player">
+      <div class="review-track">
+        <div class="image-review-track">
+        <img src="assets/img/queen.jpg" alt="track">
+      </div> <!-- image-track -->
+      <div class="title-track padding-X-10 visibility-only-lg">
+        <ul class="vertical-list-play">
+          <li class="font-size-12 font-weight-700">Queen</li>
+          <li class="font-size-12 secondary-color">Killer queen</li>
+        </ul>
+      </div><!-- title track -->
+      <div class="review-actions">
+        <ul class="list-inline secondary-color">
+          <li><i class="far fa-heart"></i></li>
+          <li><i class="far fa-folder"></i></li>
+        </ul>
+
+
+      </div><!-- review-actions -->
+      </div><!-- review -->
+      <div class="control-track">
+
+        <div class="controller-track">
+        <ul class="controller-track-icon list-inline">
+          <li><i class="fas fa-random"></i></li>
+          <li><i class="fas fa-step-backward"></i></li>
+          <li><i class="far fa-play-circle fa-2x"></i></li>
+          <li><i class="fas fa-step-forward"></i></li>
+          <li><i class="fas fa-undo"></i></li>
+        </ul> <!-- controller-track-icon -->
+        </div><!-- controller -->
+
+        <div id="progress-bar" class="margin-t-10 relative">
+          <div id="progress-bar-color"></div>
+          <span class="position-left font-size-10 font-weight-100">1:43</span>
+          <span class="position-right font-size-10 font-weight-100"> 4:30</span>
+        </div><!-- progress-bar -->
+
+      </div><!-- control-track -->
+      <div class="control-audio">
+          <ul class="list-inline">
+            <li><i class="fas fa-list"></i></li>
+            <li><i class="fas fa-desktop"></i></li>
+            <li><i class="fas fa-volume-up"></i></li>
+            <li>
+              <div id="progress-bar2">
+                <div id="progress-bar-color2"></div>
+              </div><!-- progress-bar -->
+            </li>
+          </ul>
+      </div><!-- control-audio -->
+    </footer>
 
 </div><!-- app -->
 
