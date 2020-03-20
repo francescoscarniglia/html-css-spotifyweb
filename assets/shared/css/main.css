@@ -192,3 +192,10 @@ body {
   flex-direction: column;
   justify-content: center;
 }
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
