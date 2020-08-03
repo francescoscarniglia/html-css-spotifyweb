@@ -4,6 +4,6 @@ Tecnologie:
 - HTML
 - CSS
 
-![Desktop](assets/img/spotify.jpg)
+![Desktop](assets/img/spotifyWeb.jpg)
 
 
